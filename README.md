@@ -5,5 +5,5 @@
 
 #### -> Tu rentre un nom de pokémon et l'application te redirigera vers le pokémon demandé.
 
-# Dans ce pokédex il y a chaque pokémons indiqués, avec son nom, son type et son illustration.
+##### Dans ce pokédex il y a chaque pokémons indiqués, avec son nom, son type et son illustration.
 
