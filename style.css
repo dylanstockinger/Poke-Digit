@@ -11,6 +11,7 @@
 }
 
 body {
+  background-color: #1c1d1f;
 }
 
 header {
@@ -83,4 +84,20 @@ header {
 ::placeholder {
   color: white;
   text-align: left;
+}
+
+.poke-filter {
+  margin: 20px;
+}
+.filter-generation {
+  background-color: #ffcc02;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+#pokemon-select {
+  background-color: #ffaa00;
+  color: rgb(8, 8, 8);
+  padding: 8px;
 }
