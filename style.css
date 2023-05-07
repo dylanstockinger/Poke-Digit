@@ -94,10 +94,63 @@ header {
   border-radius: 10px;
   width: 100%;
   padding: 10px;
+  margin-bottom: 50px;
 }
 
 #pokemon-select {
   background-color: #ffaa00;
   color: rgb(8, 8, 8);
   padding: 8px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-card {
+  margin: 40px;
+  background-color: #f1da2b;
+  width: 284px;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  border: rgb(200, 195, 195) solid 2px;
+}
+
+.button-call {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.call-to-action {
+  background-color: #ff5100;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: rgb(0, 0, 0) solid 2px;
+}
+
+.border-card {
+  background-color: #262424;
+  border: rgb(200, 195, 195) solid 2px;
+  height: 100%;
+}
+.border-card h3 {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-align: center;
+  margin: 15px;
+}
+
+.pokemon-card img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
