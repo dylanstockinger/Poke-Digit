@@ -1,7 +1,6 @@
 # Poke-Digit
 
-<img width="1680" alt="Capture d’écran 2023-05-07 à 18 20 08" src="https://user-images.githubusercontent.com/105114575/236689668-ab49ab63-6420-498f-a434-740e905dbd51.png">
-
+![image](https://user-images.githubusercontent.com/105114575/236750309-c1940afe-3297-4f4e-8e08-29b1a4d3dfab.png)
 
 ## Un pokédex qui te permettra de trier les pokémons grâce à une barre de recherche.
 
