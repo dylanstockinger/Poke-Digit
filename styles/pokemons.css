@@ -11,11 +11,11 @@
 }
 
 body {
-  background-color: #1c1d1f;
+  background-color: #2d4059;
 }
 
 header {
-  background-color: #1c1d1f;
+  background-color: #262c3f;
   padding: 1px 0px;
 }
 
@@ -25,7 +25,6 @@ header {
   flex-direction: row;
   list-style: none;
   justify-content: center;
-
   margin: 3rem;
 }
 
@@ -38,6 +37,7 @@ header {
 .nav-container a {
   color: #fff;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 
 .nav-container a:hover {
@@ -60,7 +60,7 @@ header {
   /* Do not repeat the image */
   background-size: cover;
   /* Resize the background image to cover the entire container */
-  background-image: url("./images/banner.png");
+  background-image: url("../images/banner.png");
 }
 
 .poke-searchbar {
@@ -74,11 +74,12 @@ header {
   border-radius: 4px;
   width: 20rem;
   height: 40px;
-  font-size: 0.9rem;
-  padding: 0.3rem;
+  font-size: 1.1rem;
+  padding: 10px;
+
   color: white;
   background: none;
-  border-bottom: 1px solid #ffcc02;
+  border: 1.5px solid orange;
 }
 
 ::placeholder {
@@ -89,8 +90,9 @@ header {
 .poke-filter {
   margin: 20px;
 }
+
 .filter-generation {
-  background-color: #ffcc02;
+  background-color: #ffd460;
   border-radius: 10px;
   width: 100%;
   padding: 10px;
@@ -98,7 +100,9 @@ header {
 }
 
 #pokemon-select {
-  background-color: #ffaa00;
+  border: 2px solid #000000;
+
+  background-color: #ffd460;
   color: rgb(8, 8, 8);
   padding: 8px;
 }
@@ -112,12 +116,12 @@ header {
 
 .pokemon-card {
   margin: 40px;
-  background-color: #f1da2b;
+  background-color: #ffffff;
   width: 284px;
   height: 100%;
   flex-direction: column;
   display: flex;
-  border: rgb(200, 195, 195) solid 2px;
+  border: rgb(97, 95, 95) solid 2px;
 }
 
 .button-call {
@@ -127,18 +131,18 @@ header {
 }
 
 .call-to-action {
-  background-color: #ff5100;
+  background-color: #f07b3f;
   padding: 0.5rem;
   border-radius: 0.5em;
   cursor: pointer;
   font-weight: 600;
   font-size: 0.8rem;
-  border: rgb(0, 0, 0) solid 2px;
+  border: rgb(0, 0, 0) solid 1px;
 }
 
 .border-card {
-  background-color: #262424;
-  border: rgb(200, 195, 195) solid 2px;
+  background-color: #262c3f;
+  border-top: rgb(0, 0, 0) solid 2px;
   height: 100%;
 }
 .border-card h3 {
