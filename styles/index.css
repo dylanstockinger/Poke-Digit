@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: #2d4059;
+}
+
+header {
+  background-color: #262c3f;
+  padding: 1px 0px;
+}
+
+.nav-container {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+
+.nav-container a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.nav-container a:hover {
+  text-decoration: underline orange;
+}
+
+.banner {
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+
+  overflow: hidden;
+  border-radius: 1px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  background-image: url("../images/banner.png");
+}
