@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: #2d4059;
+}
+
+header {
+  background-color: #262c3f;
+  padding: 1px 0px;
+}
+
+.nav-container {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+
+.nav-container a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.nav-container a:hover {
+  text-decoration: underline orange;
+}
+
+.banner {
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+
+  overflow: hidden;
+  border-radius: 1px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  background-image: url("../images/banner.png");
+}
+
+.poke-searchbar {
+  margin: 1rem 0 2rem 0;
+
+  text-align: center;
+}
+
+.poke-searchbar input {
+  border: none;
+  border-radius: 4px;
+  width: 20rem;
+  height: 40px;
+  font-size: 1.1rem;
+  padding: 10px;
+
+  color: white;
+  background: none;
+  border: 1.5px solid orange;
+}
+
+::placeholder {
+  color: white;
+  text-align: left;
+}
+
+.poke-filter {
+  margin: 20px;
+}
+
+.filter-generation {
+  background-color: #ffd460;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+#pokemon-select {
+  border: 2px solid #000000;
+
+  background-color: #ffd460;
+  color: rgb(8, 8, 8);
+  padding: 8px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-card {
+  margin: 40px;
+  background-color: #ffffff;
+  width: 284px;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  border: rgb(97, 95, 95) solid 2px;
+}
+
+.button-call {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.call-to-action {
+  background-color: #f07b3f;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border: rgb(0, 0, 0) solid 1px;
+}
+
+.border-card {
+  background-color: #262c3f;
+  border-top: rgb(0, 0, 0) solid 2px;
+  height: 100%;
+}
+.border-card h3 {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-align: center;
+  margin: 15px;
+}
+
+.pokemon-card img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
