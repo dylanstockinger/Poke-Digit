@@ -26,6 +26,8 @@ const loadCharacters = async () => {
 const displayCharacters = (characters) => {
   const htmlString = characters.map((pokemon) => {
     return `
+    <a class="links-card" href="">
+
         <div class="pokemon-card" data-pokemon-cards>
     
     
@@ -35,13 +37,11 @@ const displayCharacters = (characters) => {
     
       <div class="pokemon-type-details">
     
-      <div class="button-call">
-        <button  class="call-to-action" id="btn"> CLICK </button>
-    
-      </div>
+  
     </div>
     </div>
     </div>
+    </a>
      `;
   });
 

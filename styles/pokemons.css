@@ -115,29 +115,17 @@ header {
 }
 
 .pokemon-card {
-  margin: 40px;
   background-color: #ffffff;
   width: 284px;
   height: 100%;
   flex-direction: column;
   display: flex;
-  border: rgb(97, 95, 95) solid 2px;
 }
-
-.button-call {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
+.pokemon-card:hover {
+  border: orange solid;
 }
-
-.call-to-action {
-  background-color: #f07b3f;
-  padding: 0.5rem;
-  border-radius: 0.5em;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.8rem;
-  border: rgb(0, 0, 0) solid 1px;
+.links-card {
+  margin: 30px;
 }
 
 .border-card {
