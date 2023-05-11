@@ -112,6 +112,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0px;
 }
 
 .pokemon-card {
@@ -120,12 +121,14 @@ header {
   height: 100%;
   flex-direction: column;
   display: flex;
+  border: black solid 2px;
 }
 .pokemon-card:hover {
-  border: orange solid;
+  border: #ea5455 solid 2px;
 }
+
 .links-card {
-  margin: 30px;
+  text-decoration: none;
 }
 
 .border-card {
