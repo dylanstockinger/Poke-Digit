@@ -1,32 +1,25 @@
 const dataPokemonCards = document.querySelector(".main-container");
-const searchBar = document.getElementById("searchbar");
+
 let pokemonCharacters = [];
-
-searchBar.addEventListener("keyup", (e) => {
-  const searchString = e.target.value.toLowerCase();
-
-  const filteredPokemons = pokemonCharacters.filter((pokemon) => {
-    return (
-      pokemon.name.fr.toLowerCase().includes(searchString) ||
-      pokemon.sprites.regular.toLowerCase().includes(searchString)
-    );
-  });
-  displayCharacters(filteredPokemons);
-});
 
 const loadCharacters = async () => {
   try {
     const res = await fetch("https://api-pokemon-fr.vercel.app/api/v1/pokemon");
     pokemonCharacters = await res.json();
     displayCharacters(pokemonCharacters);
+    console.log(pokemonCharacters);
   } catch (err) {
     console.error(err);
   }
 };
+
 const displayCharacters = (characters) => {
-  const htmlString = characters.map((pokemon) => {
-    return `
-    <a class="links-card" href="">
+  const htmlString = characters
+
+    .map((pokemon) => {
+      return `
+
+    <a class="links-card" href="pokemon.html?id=${pokemon.pokedexId}">
 
         <div class="pokemon-card" data-pokemon-cards>
     
@@ -43,7 +36,8 @@ const displayCharacters = (characters) => {
     </div>
     </a>
      `;
-  });
+    })
+    .join("");
 
   dataPokemonCards.innerHTML = htmlString;
 };
