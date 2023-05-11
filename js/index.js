@@ -3,7 +3,15 @@ const searchBar = document.getElementById("searchbar");
 let pokemonCharacters = [];
 
 searchBar.addEventListener("keyup", (e) => {
-  console.log(e.target.value);
+  const searchString = e.target.value.toLowerCase();
+
+  const filteredPokemons = pokemonCharacters.filter((pokemon) => {
+    return (
+      pokemon.name.fr.toLowerCase().includes(searchString) ||
+      pokemon.sprites.regular.toLowerCase().includes(searchString)
+    );
+  });
+  displayCharacters(filteredPokemons);
 });
 
 const loadCharacters = async () => {
@@ -18,6 +26,8 @@ const loadCharacters = async () => {
 const displayCharacters = (characters) => {
   const htmlString = characters.map((pokemon) => {
     return `
+    <a class="links-card" href="">
+
         <div class="pokemon-card" data-pokemon-cards>
     
     
@@ -27,13 +37,11 @@ const displayCharacters = (characters) => {
     
       <div class="pokemon-type-details">
     
-      <div class="button-call">
-        <button  class="call-to-action" id="btn"> CLICK </button>
-    
-      </div>
+  
     </div>
     </div>
     </div>
+    </a>
      `;
   });
 
